@@ -1,0 +1,76 @@
+a{
+  text-decoration: none;
+}
+
+.button{
+  position: relative;
+  margin: 50px;
+}
+
+.compo{
+  width: 300px;
+  height: 40px;
+  transition-property: width, height;
+  transition-duration: .5s;
+}
+
+.wrapper_main{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.main{
+  border: 1px solid #000;
+  position: relative;
+  color: black;
+  background-color: #fff;
+}
+
+.main_text{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+}
+
+.main_arrow{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+.shadow{
+  border: 1px solid #000;
+  position: absolute;
+  z-index: -10;
+  top: 10px;
+  left: 10px;
+  background-color: #000;
+}
+
+.button:hover .compo{
+  width: 600px;
+  height: 80px;
+}
+
+.button:hover .main{
+  color: white;
+  background-color: black;
+}
+
+.button:hover .shadow{
+  border: none;
+  background: repeating-linear-gradient(-45deg,
+      transparent,
+      transparent 20px,
+      black 20px,
+      black 40px);
+  /* 複数の色経由点の位置 */
+  background: repeating-linear-gradient(-45deg,
+      transparent 0 5px,
+      black 5px 10px);
+}
