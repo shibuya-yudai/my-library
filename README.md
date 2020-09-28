@@ -1,6 +1,6 @@
 # My Library
 
-## This repo has my useful tools
+This repo has my useful tools
 
 ### directory-tree
 <pre>
