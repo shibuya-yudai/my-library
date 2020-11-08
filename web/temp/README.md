@@ -2,5 +2,5 @@
 
 ## setup
 ### compass
-`compass init`
+```compass init```
 - liveloader
